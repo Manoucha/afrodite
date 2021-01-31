@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.asksira.loopingviewpager.LoopingViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:clipToPadding="false"
+        app:autoScroll="true"
+        app:isInfinite="true"
+        app:itemAspectRatio="1.33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scrollInterval="3000"
+        app:viewpagerAspectRatio="1.78" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginRight="180dp"
+
+            android:layout_marginBottom="1dp"
+            app:piv_animationDuration="200"
+            app:piv_animationType="slide"
+            app:piv_interactiveAnimation="true"
+            app:piv_selectedColor="#D8A269"
+            app:piv_unselectedColor="#D0CBDCDA" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:background="@drawable/bglogo"
+            android:layout_marginTop="260dp"
+            android:orientation="vertical"
+            >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_horizontal"
+            android:text="WELCOME TO AFRODITE"
+            android:letterSpacing="0.35"
+            android:textColor="#D8A269"
+android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/into_image" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:background="@color/white"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/makeup"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/parfum" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/parfum"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/makeup"
+                android:layout_marginRight="10dp"
+
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/parfumhomme"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/parfumhomme"
+                android:layout_gravity="center"
+                />
+
+     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:gravity="center_horizontal"
+            android:weightSum="3"
+            android:background="@color/white"
+
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+             android:layout_margin="5dp"
+            android:layout_weight="1"
+                android:letterSpacing="0.25"
+                android:text="PARFUM"
+                android:textColor="#F0706D6D"
+                android:textSize="10dp"
+                android:background="@drawable/btnmakeup"
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:letterSpacing="0.25"
+                android:text="MAKE UP"
+                android:textAlignment="center"
+                android:textColor="#F0706D6D"
+                android:textSize="10dp"
+                android:background="@drawable/btnmakeup"
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:letterSpacing="0.25"
+                android:text="FOR HIM"
+                android:textAlignment="center"
+                android:textColor="#F0706D6D"
+                android:textSize="10dp"
+                android:background="@drawable/btnmakeup"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/bgnews"
+            android:layout_marginTop="700dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="50dp"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonsingin"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

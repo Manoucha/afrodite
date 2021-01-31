@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="GENERAL">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/profil"
+
+                    android:title="PROFIL" />
+                <item
+                    android:id="@+id/kidProfil"
+                    android:title="PANIER" />
+                <item
+                    android:id="@+id/logout"
+
+                    android:title="CATALOG" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="AFRODITE">
+        <menu>
+        <group>
+            <item
+                android:id="@+id/notification"
+                android:title="CONTACT US" />
+            <item
+                android:id="@+id/loout"
+                android:title="LOG OUT" />
+        </group>
+        </menu>
+    </item>
+    <item android:title="TEAM">
+
+    <menu>
+            <group>
+                <item
+                    android:title="ABOUT US" />
+                <item
+                    android:title="TERM OF USE" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
