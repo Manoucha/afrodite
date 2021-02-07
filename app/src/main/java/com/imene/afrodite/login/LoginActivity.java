@@ -1,6 +1,7 @@
 package com.imene.afrodite.login;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.imene.afrodite.R;
+import com.imene.afrodite.fragments.HomeFragment;
 import com.imene.afrodite.models.Client;
 import com.imene.afrodite.models.myApp;
 import com.imene.afrodite.retrofit.INodeJS;
@@ -19,6 +21,7 @@ import com.imene.afrodite.views.HomeActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -74,6 +77,19 @@ public class LoginActivity extends AppCompatActivity {
                 // Log error here since request failed
                 Log.d("fail ", "fail");
                 Log.e("erreur", t.toString());
+
+                new SweetAlertDialog(LoginActivity.this, SweetAlertDialog.ERROR_TYPE)
+                        .setTitleText("BAD CREDENTIALS")
+                        .setContentText("please verify your username or password ! ")
+                        .setConfirmText("OK")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+
+                            @Override
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                sweetAlertDialog.cancel();
+
+                            }
+                        }).show();
             }
 
         });

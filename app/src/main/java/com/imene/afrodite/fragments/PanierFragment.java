@@ -46,7 +46,7 @@ public class PanierFragment extends Fragment {
         // Inflate the layout for this fragment
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_panier,container,false);
-        Client user  = ((myApp) getActivity().getApplication()).getUser();
+        final Client user  = ((myApp) getActivity().getApplication()).getUser();
         TextView pointClients = view.findViewById(R.id.pointClientTv);
         ImageView membershipImage = (ImageView)view.findViewById(R.id.membership);
         pointClients.setText("you have "+user.getNbPoint()+" points");
@@ -70,7 +70,7 @@ public class PanierFragment extends Fragment {
                 myAPI = retrofit.create(INodeJS.class);
 
 
-                Call<Void> callApp = myAPI.echanger("13","1",1,100);
+                Call<Void> callApp = myAPI.echanger(String.valueOf(user.getCodeClient()),"1",1,100);
                 callApp.enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> callApp, Response<Void> response) {
@@ -110,7 +110,7 @@ public class PanierFragment extends Fragment {
         myAPI = retrofit.create(INodeJS.class);
 
 
-        Call<List<Cadeau>> call = myAPI.getCadeauDansLePanier("13");
+        Call<List<Cadeau>> call = myAPI.getCadeauDansLePanier(String.valueOf(user.getCodeClient()));
 
         call.enqueue(new Callback<List<Cadeau>>() {
             @Override

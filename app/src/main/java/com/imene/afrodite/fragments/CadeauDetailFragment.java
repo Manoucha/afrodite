@@ -49,7 +49,7 @@ public class CadeauDetailFragment extends Fragment {
                     @Override
                     public void onResponse(Call<Void> callApp, Response<Void> response) {
                         Log.d("cadeau ajouter panier","DONNNNNNNNNE");
-                        
+
                         Fragment myFragment = new PanierFragment();
 
                         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container ,  myFragment).commit();
