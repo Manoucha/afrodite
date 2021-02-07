@@ -18,7 +18,9 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.imene.afrodite.R;
+import com.imene.afrodite.fragments.CatalogueFragment;
 import com.imene.afrodite.fragments.HomeFragment;
+import com.imene.afrodite.fragments.PanierFragment;
 
 public class HomeActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -66,10 +68,10 @@ public class HomeActivity extends AppCompatActivity {
                             selectedFragment = new HomeFragment() ;
                             break;
                         case R.id.nav_dashboard:
-                            selectedFragment = new HomeFragment() ;
+                            selectedFragment = new CatalogueFragment() ;
                             break;
                         case R.id.nav_location:
-                            selectedFragment = new HomeFragment() ;
+                            selectedFragment = new PanierFragment() ;
                             break;
 
 

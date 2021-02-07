@@ -46,7 +46,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="sans-serif-thin"
                 android:hint="USERNAME"
                 android:textSize="13dp"
                 android:textColorHint="#FFFFFF" />
@@ -66,11 +65,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="sans-serif-thin"
                 android:hint="PASSWORD"
                 android:textSize="13dp"
 
-                android:letterSpacing="0.25"
 
                 android:textColorHint="#FFFFFF" />
 
