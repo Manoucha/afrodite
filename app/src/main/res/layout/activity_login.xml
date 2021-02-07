@@ -66,6 +66,7 @@
                 android:layout_height="56dp"
                 android:layout_gravity="center_horizontal"
                 android:hint="PASSWORD"
+                android:inputType="textPassword"
                 android:textSize="13dp"
 
 

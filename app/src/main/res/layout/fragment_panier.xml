@@ -23,28 +23,41 @@
             android:textColor="@color/bluee"
             android:textSize="15dp" />
 
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
             android:layout_marginTop="80dp"
             android:weightSum="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/ll"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/pointClientTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:text="YOU HAVE 2000 POINT"
+                android:text="YOU HAVE 0 POINT"
                 android:textColor="#789A97"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/membership"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/golden"
+                />
+
 
         </LinearLayout>
+
 
         <View
             android:id="@+id/divider2"
@@ -54,14 +67,13 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginLeft="56dp"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="55dp"
-            android:layout_marginRight="55dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
             android:background="?android:attr/listDivider"
             android:foregroundGravity="center" />
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvContacts"
@@ -69,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="170dp"
             android:layout_height="wrap_content" />
 
         <Button
@@ -78,15 +90,39 @@
             android:layout_height="50dp"
             android:layout_below="@+id/rvContacts"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="2dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="3dp"
             android:layout_weight="1"
+            android:fontFamily="@font/armata"
+            android:letterSpacing="0.25"
             android:background="@drawable/buttoncard"
-            android:letterSpacing="0.2"
+            android:layout_marginRight="10dp"
 
             android:padding="5dp"
             android:text="GET IT NOW !"
+
+            android:textColor="#222121"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/shop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_below="@+id/rvContacts"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttoncard"
+            android:visibility="invisible"
+            android:letterSpacing="0.2"
+
+            android:padding="5dp"
+            android:text="no item, click here to add items"
 
             android:textColor="#222121"
             android:textSize="10dp" />

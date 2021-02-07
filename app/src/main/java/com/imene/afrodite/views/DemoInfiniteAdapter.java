@@ -42,19 +42,19 @@ public class DemoInfiniteAdapter extends LoopingPagerAdapter<Integer> {
     private int getBackground (int number) {
         switch (number) {
             case 0:
-                return R.drawable.slider4;
+                return R.drawable.slide1;
             case 1:
-                return R.drawable.yespic;
+                return R.drawable.chanel;
             case 2:
-                return R.drawable.slider5;
+                return R.drawable.makee;
             case 3:
-                return R.drawable.nopic;
+                return R.drawable.woman;
             case 4:
-                return R.drawable.slider2;
+                return R.drawable.slide1;
             case 5:
-                return R.drawable.slider1;
+                return R.drawable.chanel;
             default:
-                return R.drawable.slider6;
+                return R.drawable.woman;
         }
     }
 }

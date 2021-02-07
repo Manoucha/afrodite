@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.imene.afrodite.R;
+import com.imene.afrodite.models.Client;
+import com.imene.afrodite.models.myApp;
 import com.imene.afrodite.retrofit.INodeJS;
 import com.imene.afrodite.retrofit.RetrofitClient;
 
@@ -40,17 +42,14 @@ public class CadeauDetailFragment extends Fragment {
                 Retrofit retrofit = RetrofitClient.getInstance();
 
                 myAPI = retrofit.create(INodeJS.class);
+                Client user  = ((myApp) getActivity().getApplication()).getUser();
 
-                Call<Void> callApp = myAPI.ajoutercadeaupanier( "13","1");
+                Call<Void> callApp = myAPI.ajoutercadeaupanier(String.valueOf(user.getCodeClient()),"1");
                 callApp.enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> callApp, Response<Void> response) {
                         Log.d("cadeau ajouter panier","DONNNNNNNNNE");
-
-
-
-
-
+                        
                         Fragment myFragment = new PanierFragment();
 
                         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container ,  myFragment).commit();

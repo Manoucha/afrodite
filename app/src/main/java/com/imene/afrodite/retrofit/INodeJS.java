@@ -1,6 +1,7 @@
 package com.imene.afrodite.retrofit;
 
 import com.imene.afrodite.models.Cadeau;
+import com.imene.afrodite.models.Client;
 
 import java.util.List;
 
@@ -26,11 +27,9 @@ public interface INodeJS {
                                     @Field("longitude") double longitude);
 
     @GET("login/{email}/{password}")
-    Call<String> loginUser(@Path("email")  String email,
+    Call<Client> loginUser(@Path("email")  String email,
                            @Path("password")  String password);
 
-    @GET("cadeaux/")
-    Call<List<Cadeau>> getCadeaux();
 
     @PUT("ajoutercadeaupanier/{idClient}/{idCadeau}")
     Call<Void> ajoutercadeaupanier(@Path(value="idClient") String idClient , @Path(value="idCadeau") String idCadeau );
@@ -42,5 +41,7 @@ public interface INodeJS {
     @PUT("/echanger/{idClient}/{idCadeau}/{quantite}/{points}")
     Call<Void> echanger(@Path(value="idClient") String idClient , @Path(value="idCadeau") String idCadeau ,@Path(value="quantite") int quantite,@Path(value = "points") int points);
 
+    @GET("/cadeaux/")
+    Call<List<Cadeau>> getCadeaux();
 
 }

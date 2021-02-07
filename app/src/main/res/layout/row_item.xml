@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="200dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="4dp">
 
     <LinearLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/perfume"
+            android:layout_gravity="center_horizontal"
+/>            <TextView
+            android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="90dp"
             android:fontFamily="@font/armata"
             android:text="COFFRET LANCOME"
             android:textSize="10dp"
@@ -33,7 +41,6 @@
             android:textStyle="bold"
 
             />
-
         <Button
             android:layout_width="80dp"
             android:layout_height="30dp"
@@ -41,24 +48,23 @@
             android:background="@drawable/buttoncard"
             android:letterSpacing="0.2"
 
-            android:text="GET IT NOW"
+            android:text="SEE MORE"
             android:textColor="@color/white"
             android:textSize="10dp" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:text="EXCLUSIVEMENT"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/armata"
-            android:letterSpacing="0.35"
-            android:text="EXCLUSIVEMENT"
-            android:textColor="#9285AEAA"
-
-            android:textSize="5dp"
             android:textStyle="bold"
+            android:textColor="#9285AEAA"
+            android:layout_gravity="center_horizontal"
+
+            android:letterSpacing="0.35"
+            android:textSize="5dp"
 
             />
-    </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

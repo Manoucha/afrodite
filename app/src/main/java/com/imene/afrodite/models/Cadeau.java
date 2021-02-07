@@ -10,11 +10,20 @@ public class Cadeau {
     private int numCadeau ;
     private int Niveau;
     private int Quantite;
+    private int drawable ;
 
     public Cadeau() {
     }
 
-    public Cadeau(String nom, float PrixCad, String description, int NombreDePointsCad, int numCadeau, int niveau, int quantite) {
+    public int getDrawable() {
+        return drawable;
+    }
+
+    public void setDrawable(int drawable) {
+        this.drawable = drawable;
+    }
+
+    public Cadeau(String nom, float PrixCad, String description, int NombreDePointsCad, int numCadeau, int niveau, int quantite, int drawable ) {
         this.nom = nom;
         this.PrixCad = PrixCad;
         this.description = description;
@@ -22,6 +31,7 @@ public class Cadeau {
         this.numCadeau = numCadeau;
         this.Niveau = niveau;
         this.Quantite = quantite;
+        this.drawable = drawable;
     }
 
     public int getNumCadeau() {

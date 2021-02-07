@@ -24,7 +24,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 tools:endIconMode="clear_text"
-
+                android:textSize="10dp"
                 android:layout_height="wrap_content"
                 tools:startIconDrawable="@drawable/loupe"
                 />
@@ -79,76 +79,17 @@
                 />
         </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/cardpub">
-
-            <TextView
-                android:layout_width="222dp"
-                android:layout_height="wrap_content"
-
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="104dp"
-                android:fontFamily="@font/bubblegum_sans"
-                android:text="HAPPY VALENTINE'S DAY"
-                android:textColor="#F81537"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="162dp"
-                android:layout_height="wrap_content"
-
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="99dp"
-                android:layout_marginLeft="99dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="43dp"
-                android:layout_marginRight="43dp"
-                android:fontFamily="@font/bubblegum_sans"
-                android:text="- 70% -60% -40%"
-                android:textColor="#FF4460"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="131dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="165dp"
-                android:layout_marginLeft="165dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginEnd="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="6dp"
-                android:fontFamily="@font/bubblegum_sans"
-                android:text="LIMITED TIME ONLY"
-                android:textColor="#7C7B7B"
-                android:textSize="12sp" />
-        </RelativeLayout>
-
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="140dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="141dp"
             android:layout_marginRight="141dp"
             android:letterSpacing="0.30"
-            android:text="3450 PRODUCT"
+            android:text="BEST SELLS"
             android:textColor="@color/bluee"
             android:textSize="13dp" />
 
@@ -158,7 +99,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="382dp"
+            android:layout_marginTop="165dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -172,7 +113,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginRight="5dp"
                     android:orientation="vertical"
                     android:background="@drawable/cardproduct">
                     <TextView
@@ -336,189 +276,27 @@
 
                         />
                 </LinearLayout>
+
             </LinearLayout>
-            <LinearLayout
-                android:layout_gravity="center_horizontal"
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:layout_marginTop="20dp"
-
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/cardproduct">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="COFFRET LANCOME"
-                        android:layout_marginTop="90dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-
-                        android:text="DAILY USE"
-                    android:fontFamily="@font/annie_use_your_telescope"
-                    android:textStyle="bold"
-                        android:textColor="#85AEAA"
-                    android:textSize="10dp"
-
-                    />
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/buttoncard"
-                        android:text="GET IT NOW"
-                        android:layout_gravity="center_horizontal"
-
-                        android:textColor="@color/white"
-                        android:letterSpacing="0.2"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="EXCLUSIVEMENT"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textColor="#9285AEAA"
-                        android:layout_gravity="center_horizontal"
-
-                        android:letterSpacing="0.35"
-                        android:textSize="5dp"
-
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/farr">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="COFFRET LANCOME"
-                        android:layout_marginTop="90dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-
-                        android:text="DAILY USE"
-                        android:fontFamily="@font/annie_use_your_telescope"
-                        android:textStyle="bold"
-                        android:textColor="#85AEAA"
-                        android:textSize="10dp"
-
-                        />
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/buttoncard"
-                        android:text="GET IT NOW"
-                        android:layout_gravity="center_horizontal"
-
-                        android:textColor="@color/white"
-                        android:letterSpacing="0.2"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="EXCLUSIVEMENT"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textColor="#9285AEAA"
-                        android:layout_gravity="center_horizontal"
-
-                        android:letterSpacing="0.35"
-                        android:textSize="5dp"
-
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/cardproduct">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="COFFRET LANCOME"
-                        android:layout_marginTop="90dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-
-                        android:text="DAILY USE"
-                        android:fontFamily="@font/annie_use_your_telescope"
-                        android:textStyle="bold"
-                        android:textColor="#85AEAA"
-                        android:textSize="10dp"
-
-                        />
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/buttoncard"
-                        android:text="GET IT NOW"
-                        android:layout_gravity="center_horizontal"
-
-                        android:textColor="@color/white"
-                        android:letterSpacing="0.2"
-                        android:textSize="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="EXCLUSIVEMENT"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/armata"
-                        android:textStyle="bold"
-                        android:textColor="#9285AEAA"
-                        android:layout_gravity="center_horizontal"
-
-                        android:letterSpacing="0.35"
-                        android:textSize="5dp"
-
-                        />
-                </LinearLayout>
-            </LinearLayout>
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+   android:layout_marginTop="20dp"
+                android:letterSpacing="0.30"
+                android:text="ALL PRODUCTS"
+                android:layout_marginBottom="11dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/bluee"
+                android:textSize="13dp" />
+            <include layout="@layout/content_item1" />
             <Button
                 android:layout_marginTop="10dp"
                 android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:background="@drawable/buttoncard"
+                android:layout_height="20dp"
+                android:background="@drawable/buttonexchange"
                 android:layout_gravity="center_horizontal"
                 android:letterSpacing="0.35"
                 android:textColor="#838383"

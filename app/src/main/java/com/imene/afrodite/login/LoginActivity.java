@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.imene.afrodite.R;
+import com.imene.afrodite.models.Client;
+import com.imene.afrodite.models.myApp;
 import com.imene.afrodite.retrofit.INodeJS;
 import com.imene.afrodite.retrofit.RetrofitClient;
 import com.imene.afrodite.views.HomeActivity;
@@ -48,15 +50,17 @@ public class LoginActivity extends AppCompatActivity {
     public void loginUser(String email, String password)
     {
 
-        Call<String> callIdCourseur = myAPI.loginUser(email,password);
-        callIdCourseur.enqueue(new Callback<String>() {
+        Call<Client> callIdCourseur = myAPI.loginUser(email,password);
+        callIdCourseur.enqueue(new Callback<Client>() {
             @Override
-            public void onResponse(Call<String> call, Response<String> response) {
+            public void onResponse(Call<Client> call, Response<Client> response) {
 
-                String idCourseur= response.body();
-                JSONObject teste = null;
+                Client cl= response.body();
 
                 Log.d("LOGIN : ","succes");
+                Client client = new Client(cl.getCodeClient(),cl.getPrenom(),cl.getNbPoint(),cl.getMemberShip_id());
+                Log.d("nb points : ",""+client.getNbPoint());
+               ((myApp) getApplication()).setUser(client);
 
                 Intent iinent= new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(iinent);
@@ -66,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
             @Override
-            public void onFailure(Call<String> call, Throwable t) {
+            public void onFailure(Call<Client> call, Throwable t) {
                 // Log error here since request failed
                 Log.d("fail ", "fail");
                 Log.e("erreur", t.toString());

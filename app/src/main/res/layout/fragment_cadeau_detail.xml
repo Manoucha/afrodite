@@ -113,7 +113,6 @@
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/armata"
-            android:letterSpacing="0.15"
             android:text="Vivre sa vie au superlatif. Suivre ses envies et son instinct, briser les codes et assumer sa singularité. Affirmée, la femme Black Opium incarne le nouvel esprit Yves Saint Laurent.
 "
             android:textColor="#773B3C3C"
@@ -123,9 +122,10 @@
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
+
+        android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="70dp"
         android:layout_height="wrap_content">
     <Button
         android:layout_width="match_parent"
@@ -151,10 +151,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="2dp"
             android:layout_weight="1"
-            android:background="@drawable/buttonsingin"
             android:letterSpacing="0.2"
             android:padding="5dp"
-
+            android:background="@drawable/buttonexchange"
             android:text="EXCHANGE POINTS"
             android:textColor="#222121"
             android:textSize="10dp" />
