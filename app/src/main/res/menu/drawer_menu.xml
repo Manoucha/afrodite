@@ -8,19 +8,17 @@
                 <item
                     android:id="@+id/profil"
 
-                    android:title="PROFIL" />
+                    android:title="PROFIL"
+                    />
                 <item
                     android:id="@+id/kidProfil"
-                    android:title="PANIER" />
-                <item
-                    android:id="@+id/logout"
+                    android:title="HOME" />
 
-                    android:title="CATALOG" />
             </group>
         </menu>
     </item>
 
-    <item android:title="AFRODITE">
+    <item android:title="VOISIN">
         <menu>
         <group>
             <item

@@ -3,22 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/backgroundlogin"
 
 
     android:layout_height="match_parent"
     tools:context=".login.LoginActivity">
 
-    <ImageView
-        android:id="@+id/image1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bg1" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/image1"
         android:orientation="vertical">
 
 
@@ -27,7 +22,8 @@
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
-            android:src="@drawable/logo"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/logooo"
 
             />
 
@@ -85,7 +81,7 @@
             android:letterSpacing="0.15"
             android:text="SIGN IN"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="@color/white"
+            android:textColor="#0BB0C0"
             android:textSize="18sp"
             android:onClick="login"
             android:textStyle="bold"
@@ -127,8 +123,7 @@
                 android:padding="5dp"
                 android:text=" CLIC HERE"
                 android:layout_gravity="bottom"
-
-                android:textColor="#145A52"
+                android:textColor="#0BB0C0"
                 android:textSize="10dp"
                 android:textStyle="bold" />
         </LinearLayout>

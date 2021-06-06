@@ -3,25 +3,25 @@
     <item android:state_pressed="false" >
         <shape>
 
-            <gradient android:startColor="#CCDDDB"
-                android:endColor="#FFFFFF"
+            <gradient android:startColor="#B7DAD8"
+                android:endColor="#B7DAD8"
                 android:angle="270" />
             <stroke
                 android:width="0.5px"
                 android:color="#C7D5D4" />
-            <corners android:radius="10dp" />
+            <corners android:radius="90dp" />
         </shape>
     </item>
     <item android:state_pressed="true" >
         <shape>
-            <gradient android:startColor="#D1C2C7"
+            <gradient android:startColor="#74B7DAD8"
                 android:endColor="#FFFFFF"
                 android:angle="270" />
 
             <stroke
                 android:width="1px"
                 android:color="#FFFFFF" />
-            <corners android:radius="20dp" />
+            <corners android:radius="90dp" />
         </shape>
     </item>
 </selector>

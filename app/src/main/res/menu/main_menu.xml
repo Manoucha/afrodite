@@ -3,12 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.imene.afrodite.views.HomeActivity" >
+    tools:context="com.imene.voisin.views.HomeActivity" >
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/chat"
         app:showAsAction="always"
-        android:title="" />
+        android:title="hhh"
+        android:icon="@drawable/chat_2"
+        />
+
+
 
 
 

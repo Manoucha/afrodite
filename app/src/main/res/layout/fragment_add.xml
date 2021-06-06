@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imagebtn"
+        android:layout_width="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/add_image"
+        android:layout_height="60dp">
+
+
+    </ImageButton>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/spinner_border"
+        android:layout_marginLeft="55dp" />
+    <Spinner
+        android:id="@+id/categorie"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/spinner_border"
+        android:layout_marginLeft="55dp" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_borders"
+        android:gravity="top"
+        android:hint="Title"
+        android:textSize="13dp"
+
+        android:inputType="text"
+        android:overScrollMode="always"
+        android:padding="15dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" />
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_borders"
+        android:gravity="top"
+        android:hint="Adersse.."
+        android:inputType="text"
+        android:overScrollMode="always"
+        android:padding="15dp"
+        android:textSize="13dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/adr"
+        style="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:fontFamily="@font/athiti_extralight"
+        android:text="Récupérer mon adresse actuelle"
+        android:textColor="#AD000000"
+        android:textSize="14sp"
+         />
+
+
+    <EditText
+        android:id="@+id/shipper_field"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_borders"
+        android:gravity="top"
+        android:hint="Description..."
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:padding="15dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/publier"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.15"
+        android:textSize="13dp"
+
+        android:text="PUBLIER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#0BB0C0"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</LinearLayout>
+</ScrollView>

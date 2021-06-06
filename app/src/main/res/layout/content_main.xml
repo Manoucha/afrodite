@@ -11,13 +11,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@drawable/etoile"
-        app:titleTextAppearance="@style/TitleBarTextAppearance"
+        android:layout_height="wrap_content"
+        android:background="#D5F1F4"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        />
+        app:titleTextAppearance="@style/TitleBarTextAppearance" />
 
 
     <FrameLayout
@@ -36,9 +35,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation"
-        android:background="?android:attr/windowBackground"
-        app:itemTextAppearanceActive="@style/ActiveText"
-        app:itemTextAppearanceInactive="@style/InactiveText"
+        app:itemIconTint="#0BB0C0"
+        app:itemTextColor="@color/bluee"
+        app:itemTextAppearanceActive="@style/textClicked"
+        app:itemTextAppearanceInactive="@style/textnotClicked"
+        android:background="#F8F8F8"
+
         />
 
 </RelativeLayout>

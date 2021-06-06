@@ -5,4 +5,21 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#FFFFFF</color>
     <color name="bluee">#9FB1B0</color>
+
+    <color name="primaryTextColor">#FF000000</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="bottom">#FAFAFA</color>
+    <color name="secondaryTextColor">#6b000000</color>
+    <color name="light_grey">#eeeeee</color>
+    <color name="message_bubble_grey">#e0e0e0</color>
+    <color name="message_text_grey">#757575</color>
+    <color name="menu_background_grey">#40bdbdbd</color>s
+
+    <!--Used in color palette-->
+    <color name="red">#F44336</color>
+    <color name="green">#009688</color>
+    <color name="blue">#03A9F4</color>
+    <color name="purple">#9C27B0</color>
+    <color name="violet">#673AB7</color>
+    <color name="yellow">#FFC107</color>
 </resources>
