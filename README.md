@@ -1,2 +1,2 @@
 # Voisin
- Application mobile entraide entre voisins
+ Application mobile pour entraide entre voisins
